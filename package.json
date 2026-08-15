@@ -1,0 +1,34 @@
+{
+  "name": "@neuronest/root",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NeuroNest — an AI-powered personal intelligence and learning ecosystem.",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@neuronest/backend",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present"
+  },
+  "keywords": [
+    "ai",
+    "artificial-intelligence",
+    "personal-ai",
+    "learning",
+    "productivity",
+    "memory",
+    "typescript",
+    "nodejs",
+    "monorepo"
+  ],
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
